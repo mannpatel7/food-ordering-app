@@ -2,8 +2,9 @@
   "name": "episode1",
   "version": "1.0.0",
   "description": "this is react",
-  "scripts": {
-    "build": "parcel episode4/index4.html --dist-dir dist/ep4"
+ "scripts": {
+    "start": "parcel episode4/index4.html",
+    "build": "parcel build episode4/index4.html --dist-dir dist"
   },
   "keywords": [
     "react"
