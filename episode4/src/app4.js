@@ -21,7 +21,7 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appstore";
 //Chunking or code splitting or lazy loading
 //Lazy loading Grocery component
-const Grocery=lazy(()=>import("./components/Grocery"));
+
 
 const AppLayout= ()=> {
     return(
@@ -49,10 +49,6 @@ const appRouter = createHashRouter([
       {
         path: "contact",
         element: <Contact />,
-      },
-      {
-        path: "grocery",
-        element:<Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>, 
       },
       {
         path: "restaurant/:id",

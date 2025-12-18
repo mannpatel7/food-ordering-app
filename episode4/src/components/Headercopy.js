@@ -61,7 +61,7 @@ function Header() {
                     <li className="hover:text-blue-500 transition-colors"><Link className="flex items-center gap-2" to="/"><HomeIcon className="w-4 h-4" /> Home</Link></li>
                     <li className="hover:text-blue-500 transition-colors"><Link to="/about">About</Link></li>
                     <li className="hover:text-blue-500 transition-colors"><Link to="/contact">Contact</Link></li>
-                    <li className="hover:text-blue-500 transition-colors"><Link to="/grocery">Grocery</Link></li>
+                   
                     <li className="bg-blue-600 text-white px-4 py-1 rounded-full hover:bg-blue-700">
                         <Link to="/cart" className="flex items-center gap-2">
                             <CartIcon className="w-4 h-4" /> Cart ({cart.items.length})

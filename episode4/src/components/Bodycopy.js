@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Restaurantcard,{withpromoted} from "./restaurantcard copy";
 import dishes from "../../dishes.json";
-import Shimmer from "./shimmer";
+import Searchnotavailable from "./Searchnotavailable";
 import useOnlineStatus from "./useonlinestatus";
 
 const PromotedRestro = withpromoted(Restaurantcard);
@@ -15,7 +15,7 @@ const Body = () => {
 
     if (!onlineStatus) return <h1 className="text-center mt-10 text-2xl">Offline... check connection.</h1>;
 
-    return filteredDishes.length === 0 ? <Shimmer /> : (
+    return filteredDishes.length === 0 ? <Searchnotavailable/> : (
         <div className="bg-white dark:bg-slate-900 min-h-screen transition-colors">
             
             {/* Filter & Search Bar */}
