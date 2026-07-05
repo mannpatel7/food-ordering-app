@@ -1,36 +1,58 @@
-const mongoose=require("mongoose")
+const mongoose = require("mongoose")
 
-const Restschema=new mongoose.Schema({
-    id:{
-        type:Number,
-        required:true,
-        unique:true
-    },
+const restaurantSchema = new mongoose.Schema({
+
     name:{
         type:String,
         required:true
     },
+
     cuisine:{
-        type:String,
+        type:String
     },
+
     rating:{
-        type:Number
+        type:Number,
+        default:0
     },
-    isPreferred:{
-        type:Boolean
-    },
+
     image:{
         type:String
     },
-    costfortwo:{
+
+    costForTwo:{
         type:Number
     },
-    isPromoted:{
-        type:Boolean
+
+    isPreferred:{
+        type:Boolean,
+        default:false
     },
+
+    isPromoted:{
+        type:Boolean,
+        default:false
+    },
+
     mapEmbed:{
         type:String
     },
+
+    owner:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"User"
+    },
+
+    isApproved:{
+        type:Boolean,
+        default:false
+    },
+
+    createdAt:{
+        type:Date,
+        default:Date.now
+    }
+
 })
 
-module.exports=mongoose.model("Restaurant",Restschema)
+module.exports = mongoose.model("Restaurant", restaurantSchema)

@@ -8,24 +8,28 @@ const orderSchema = new mongoose.Schema(
       required: true
     },
 
-    items: [
-      {
-        menuItem: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "Menue",   
-          required: true
-        },
-        quantity: {
-          type: Number,
-          required: true,
-          min: 1
-        },
-        priceAtOrderTime: {
-          type: Number,
-          required: true
-        }
-      }
-    ],
+   items: [
+  {
+    menuItem: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Menue",
+      required: true
+    },
+    quantity: {
+      type: Number,
+      required: true
+    },
+    priceAtOrderTime: {
+      type: Number,
+      required: true
+    },
+    restaurantId: {                     
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Restaurant",
+      required: true
+    }
+  }
+],
 
     totalAmount: {
       type: Number,
@@ -53,8 +57,8 @@ const orderSchema = new mongoose.Schema(
 
     paymentMethod: {
       type: String,
-      enum: ["COD", "Online"],
-      default: "COD"
+      enum: ["cod", "upi", "card","razorpay"],
+      default: "cod"
     },
 
     deliveryAddress: {

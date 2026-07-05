@@ -22,12 +22,16 @@ const userSchema=new mongoose.Schema({
     },
     role:{
         type:String,
-        enum:["user","admin"],
+        enum:["user","owner","admin"],
         default:"user"
     },
     phoneNo:{
         type:Number,
         min:10
+    },
+    address:{
+        type:String,
+        trim:true
     },
 },{timestamps:true})
 

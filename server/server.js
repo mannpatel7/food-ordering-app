@@ -9,10 +9,16 @@ const cartRouter=require("./router/cartrouter")
 const orderRouter=require("./router/orederrouter")
 const adminRouter=require("./router/adminrouter")
 const adminorderRouter=require("./router/adminorderrouter")
+const paymentrouter=require("./router/paymentrouter")
 const cookieParser = require('cookie-parser');
 const app=express();
 
-app.use(cors());
+
+
+app.use(cors({
+    origin: "http://localhost:1234",
+    credentials: true
+}));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -25,6 +31,7 @@ app.use("/api",cartRouter)
 app.use("/api",orderRouter)
 app.use("/api",adminRouter)
 app.use("/api",adminorderRouter)
+app.use("/api",paymentrouter)
 
 dbConnect().then(()=>{
     console.log("DB Connected");

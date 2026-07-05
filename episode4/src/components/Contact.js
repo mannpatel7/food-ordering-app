@@ -12,7 +12,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // simple client-side handling — replace with API call as needed
+        
         console.log("Contact form submitted", form);
         setSent(true);
         setForm({ name: "", email: "", message: "" });

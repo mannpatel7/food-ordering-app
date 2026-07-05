@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../useonlinestatus";
+import logo from "../mr_food_logo.png";
 
 
 
@@ -12,7 +13,7 @@ function Header() {
             {/* <h1 className="text-red-500 text-3xl">Tailwind Test</h1> */}
 
             <div className="brand">
-                <img src="https://penji.co/wp-content/uploads/2022/08/10.-mr.-d-food-logo.jpg.webp" alt="logo" className="logo " />
+                <img src={logo} alt="logo" className="logo " />
                 <h1 className="brand-title">Mr. food</h1>
             </div>
 
