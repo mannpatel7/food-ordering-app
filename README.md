@@ -34,27 +34,42 @@ State Management: React Hooks
 Version Control: Git & GitHub
 
 📁 Project Structure
-food-ordering-app/
-├── episode4/
+mr.food/
+├── frontend/
 │   ├── src/
 │   │   ├── components/
 │   │   ├── utils/
 │   │   └── app4.js
-├── package.json
-├── tailwind.config.js
-├── .gitignore
-└── README.md
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── .env
+├── backend/
+│   ├── configs/
+│   ├── controller/
+│   ├── middleware/
+│   ├── models/
+│   ├── router/
+│   ├── server.js
+│   ├── package.json
+│   └── .env
+├── README.md
+└── .gitignore
 
 ⚙️ Installation & Setup
 
-Install dependencies
-
+### Frontend Setup
+```bash
+cd frontend
 npm install
-
-
-Start the development server
-
 npm start
+```
+
+### Backend Setup
+```bash
+cd backend
+npm install
+npm run dev
+```
 
 🎯 Learning Outcomes
 
