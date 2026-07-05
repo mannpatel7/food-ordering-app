@@ -10,7 +10,7 @@ import { User, LogOut } from "lucide-react";
 
 function Header() {
     const { isLoggedIn, setIsLoggedIn, user, setUser,cartItems,getCartItems } = useAppContext();
-    const baseUrl = "http://localhost:5000/api";
+    const baseUrl = "/api";
     const [profileOpen, setProfileOpen] = useState(false);
 const handleLogout = async () => {
   await axios.post(`${baseUrl}/logout`, {}, { withCredentials: true });

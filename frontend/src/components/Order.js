@@ -16,7 +16,7 @@ const Orders = () => {
   const { user } = useAppContext();
   const [orders, setOrders] = useState([]);
 
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
 
   useEffect(() => {
 

@@ -7,7 +7,7 @@ import {
   LoaderCircle, Plus, Search, Store, Utensils,
 } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "/api";
 
 export default function RestrosPage() {
   const [restaurants, setRestaurants] = useState([]);

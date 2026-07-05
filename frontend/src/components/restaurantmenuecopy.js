@@ -9,7 +9,7 @@ const Restaurantmenue = () => {
   const { id } = useParams();
   const [menue, setMenue] = useState([]);
   const [restaurant, setRestaurant] = useState(null);
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
 
  const fetchMenue = async (id) => {
   try {

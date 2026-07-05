@@ -406,7 +406,7 @@ import { useEffect, useMemo, useState } from "react";
 import { toast } from "react-toastify";
 import { CheckCircle2, LoaderCircle, MapPin, PackageCheck } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "/api";
 const STATUS = {
   Pending: ["Confirmed", "Confirm order", "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300"],
   Confirmed: ["Preparing", "Start preparing", "bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300"],

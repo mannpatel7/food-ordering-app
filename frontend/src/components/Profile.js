@@ -10,7 +10,7 @@ const [showEdit, setShowEdit] = useState(false);
   const { user, setIsLoggedIn } = useAppContext();
   const navigate = useNavigate();
 
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
 
   const initials = user?.name
     ? user.name.split(" ").map((n) => n[0]).join("").toUpperCase().slice(0, 2)
@@ -155,7 +155,7 @@ const EditProfileModal = ({ user, onClose }) => {
   const [phoneNo, setPhoneNo] = useState(user?.phoneNo || "");
   const { fetchUser } = useAppContext();
 
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
 
   const handleUpdate = async () => {
   try {

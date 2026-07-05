@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { ArrowLeft, Leaf, LoaderCircle, Plus, Trash2, Utensils } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "/api";
 const EMPTY = { name: "", category: "", price: "", isVeg: true, image: "" };
 
 export default function MenuManagerPage() {

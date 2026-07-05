@@ -34,7 +34,7 @@ const inputCls = (err) =>
    }`;
 
 export default function AddRestaurantPage({ setRestaurants, setActiveTab }) {
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
   const navigate = useNavigate();
 
   const [form, setForm] = useState({

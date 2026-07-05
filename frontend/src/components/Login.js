@@ -12,7 +12,7 @@ function Login() {
   const [activeField, setActiveField] = useState(null);
   const [remember, setRemember] = useState(false);
   const { fetchUser, setIsLoggedIn } = useAppContext();
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {

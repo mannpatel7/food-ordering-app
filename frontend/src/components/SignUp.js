@@ -17,7 +17,7 @@ function Signup() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
 
   const handleChange = (e) => {
     setForm({

@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { useAppContext } from "../../context/appcontext.js";
 
-const API = "http://localhost:5000/api";
+const API = "/api";
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en-IN", { day: "2-digit", month: "short", year: "numeric" })
     .format(new Date(date));

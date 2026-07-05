@@ -7,7 +7,7 @@ const CategoryAccordion = ({ category, items = [] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { user, setCartItems,cartItems,getCartItems } = useAppContext();
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
 
   const handleAddItems = async (item) => {
     try {

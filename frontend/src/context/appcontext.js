@@ -7,7 +7,7 @@ export const AppProvider=({children})=>{
     const [restaurant,setRestaurant]=useState([])
     const [cartItems,setCartItems]=useState([])
     const [order,setOrder]=useState([])
-    const baseUrl="http://localhost:5000/api"
+    const baseUrl="/api"
     const navigate=useNavigate()
     const [user, setUser] = useState(null);
     const [isLoggedIn, setIsLoggedIn] = useState(false);

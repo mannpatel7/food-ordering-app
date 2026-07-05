@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Cart = () => {
 
   const { cartItems, user, setCartItems } = useAppContext();
-  const baseUrl = "http://localhost:5000/api";
+  const baseUrl = "/api";
   const navigate = useNavigate();
 
   const handleclear = async () => {
